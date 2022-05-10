@@ -17,6 +17,13 @@
 #' 
 #' @author F. Guillaume Blanchet
 #' @keywords manip
+#' 
+#' @importFrom spdep cell2nb
+#' @importFrom spdep nbdists
+#' @importFrom spdep nb2mat
+#' @importFrom spdep mat2listw
+#' @importFrom spatialreg errorsarlm
+#' @importFrom stats residuals
 #' @export
 correctAuto <- function(mat, diagWeight = 1/sqrt(2)){
   
@@ -31,7 +38,7 @@ correctAuto <- function(mat, diagWeight = 1/sqrt(2)){
   nbObj <- spdep::cell2nb(nC, nR, type = "queen")
   distLink <- spdep::nbdists(nbObj,xy)
   link <- spdep::nb2mat(nbObj, glist = distLink, style = "B")
-#  link[which(link > 1, arr.ind = TRUE)] <- diagWeight
+  link[which(link > 1, arr.ind = TRUE)] <- diagWeight
   link <- spdep::mat2listw(link)
   
   # Build model

@@ -18,6 +18,8 @@
 #' 
 #' @author F. Guillaume Blanchet
 #' @keywords manip
+#' 
+#' @importFrom stats quantile
 #' @export
 correctRC <- function(mat, lower = 0.25, upper = 0.75) {
 	

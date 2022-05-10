@@ -1,15 +1,21 @@
 Package: plateCorrect
 Type: Package
 Title: Corrections techniques to standardize plates
-Version: 0.0-1
-Date: 2022-04-29
+Version: 0.0-2
+Date: 2022-05-10
 Author: F. Guillaume Blanchet
 Maintainer: F. Guillaume Blanchet <guillaume.blanchet@usherbrooke.ca>
-Description: This package proposes various correction techniques to standardize plates 
+Description: This package proposes various correction techniques to standardize plates.
 Depends: 
   spdep,
   spatialreg,
   stats
-License: MIT
+Suggests: 
+  knitr, 
+  rmarkdown,
+  fields,
+  dichromat
+License: MIT + file LICENSE
 RoxygenNote: 7.1.2
 Encoding: UTF-8
+VignetteBuilder: knitr
