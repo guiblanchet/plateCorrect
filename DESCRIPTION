@@ -1,0 +1,15 @@
+Package: plateCorrect
+Type: Package
+Title: Corrections techniques to standardize plates
+Version: 0.0-1
+Date: 2022-04-29
+Author: F. Guillaume Blanchet
+Maintainer: F. Guillaume Blanchet <guillaume.blanchet@usherbrooke.ca>
+Description: This package proposes various correction techniques to standardize plates 
+Depends: 
+  spdep,
+  spatialreg,
+  stats
+License: MIT
+RoxygenNote: 7.1.2
+Encoding: UTF-8
