@@ -7,10 +7,9 @@ This R package proposes various correction techniques to standardize plates.
 ```
 library(devtools)
 
-install_github("https://github.com/guiblanchet/plateCorrect")
+install_github("https://github.com/guiblanchet/plateCorrect", auth_token="your_token")
 ```
 
 # Using the package
 
 Take a look at the vignette in the R package
-
